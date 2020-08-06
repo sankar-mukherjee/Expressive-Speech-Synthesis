@@ -5,6 +5,10 @@ class Hyperparameters():
 
     data = '../database/blizzard2013/segmented/wavn'
 
+    # linguistic
+    vocab = "PE abcdefghijklmnopqrstuvwxyz'.?"  # english
+    char2idx = {char: idx for idx, char in enumerate(vocab)}
+
     # preprocessing
     sr = 16000  # sampling frequency
     preemphasis = .97  # or None
@@ -16,15 +20,16 @@ class Hyperparameters():
     n_mels = 80  # Number of Mel banks to generate
     max_db = 100
     ref_db = 20
-
     # padding
     r = 5
 
     # training
     eval_size = 1
-
     # device select
     use_gpu = torch.cuda.is_available()
+    device = 'cuda:0'
+    # log
+    log_dir = 'log/train{}'
 
 
 if __name__ == '__main__':

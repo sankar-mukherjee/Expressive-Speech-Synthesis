@@ -1,4 +1,6 @@
 import os
+import unicodedata
+import re
 
 import torch
 from Hyperparameters import Hyperparameters as hp
@@ -12,10 +14,10 @@ class SpeechDataset(Dataset):
     def __init__(self, r=slice(0, None)):
         'Initialization'
         print('Start loading data')
-        fpaths, labels = get_blizzard_data(hp.data, r)
+        fpaths, texts = get_blizzard_data(hp.data, r)
         print('Finish loading data')
         self.fpaths = fpaths
-        self.labels = labels
+        self.texts = texts
 
     def __len__(self):
         """Denotes the total number of samples"""
@@ -27,21 +29,29 @@ class SpeechDataset(Dataset):
         mag = torch.from_numpy(mag)
         GO_mel = torch.zeros(1, mel.size(1))  # GO frame
         mel = torch.cat([GO_mel, mel], dim=0)
-        return {'labels': self.labels[idx], 'mel': mel, 'mag': mag}
+        text = self.texts[idx]
+        return {'text': text, 'mel': mel, 'mag': mag}
 
 
 def get_blizzard_data(data_dir, r):
-    file_list = os.listdir(data_dir)
+    file_list = 'filelists/bliz13_audio_text_train_filelist.txt'
+
+    texts = []
     wav_paths = []
-    labels = []
-    for f in file_list:
-        wav_paths.append(os.path.join(data_dir, f))
-        labels.append(f)
+    with open(file_list, 'r') as f:
+        for line in f.readlines():
+            wav_path, text = line.strip().split('|')
+            wav_paths.append(os.path.join(data_dir, wav_path))
+
+            text = text_normalize(text) + 'E'
+            text = [hp.char2idx[c] for c in text]
+            text = torch.Tensor(text).type(torch.LongTensor)
+            texts.append(text)
 
     # for wav in wav_paths[-20:]:
     #     print(wav)
 
-    return wav_paths[r], labels[r]
+    return wav_paths[r], texts[r]
 
 
 def collate_fn(batch):
@@ -51,15 +61,15 @@ def collate_fn(batch):
     mags:  [N, max_T_y, 1+n_fft/2]
     '''
 
-    #labels = [d['labels'] for d in batch]
+    texts = [d['text'] for d in batch]
     mels = [d['mel'] for d in batch]
     mags = [d['mag'] for d in batch]
 
-    #labels = pad_sequence(labels)
+    texts = pad_sequence(texts)
     mels = pad_sequence(mels)
     mags = pad_sequence(mags)
 
-    return {'mel': mels, 'mag': mags}
+    return {'text': texts, 'mel': mels, 'mag': mags}
 
 
 def pad_sequence(sequences):
@@ -82,13 +92,21 @@ def pad_sequence(sequences):
 
     return out
 
+def text_normalize(text):
+    text = ''.join(char for char in unicodedata.normalize('NFD', text)
+                   if unicodedata.category(char) != 'Mn')  # Strip accents
+
+    text = text.lower()
+    text = re.sub("[^{}]".format(hp.vocab), " ", text)
+    text = re.sub("[ ]+", " ", text)
+    return text
 
 if __name__ == '__main__':
-    dataset = SpeechDataset(r=slice(hp.eval_size, 16))
+    dataset = SpeechDataset(r=slice(hp.eval_size, 15))
     loader = DataLoader(dataset=dataset, batch_size=8, collate_fn=collate_fn)
 
     for batch in loader:
-        #print(batch['labels'][0])
+        print(batch['text'][0])
         print(batch['mel'].size())
         print(batch['mag'].size())
         break
