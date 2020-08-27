@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Expressive-Speech-Synthesis.iml" filepath="$PROJECT_DIR$/.idea/Expressive-Speech-Synthesis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../old/dip/tachotron-tensorflow/.idea/tachotron-tensorflow.iml" filepath="$PROJECT_DIR$/../old/dip/tachotron-tensorflow/.idea/tachotron-tensorflow.iml" />
     </modules>
   </component>
 </project>

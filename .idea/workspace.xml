@@ -1,7 +1,410 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8c92dff1-8229-4df8-862a-68ab1492ce42" name="Default Changelist" comment="added blizzard_preprocess.py&#10;update Data.py">
+      <change afterPath="$PROJECT_DIR$/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/WaveRNN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/tacotron_wavernn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/training_viz.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/wavernn_alt_model_hrz2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gen_tacotron.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gen_wavernn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hparams.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hparams_custom_multihead.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/deepmind_version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/fatchord_version.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/tacotron.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/tacotron_gst_custom_multihead.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/tacotron_gst_pytorch_multihead.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/GST.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/Loss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/Modules.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/Network.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/filelists/bliz13_audio_text_train_filelist.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/filelists/bliz13_audio_text_val_filelist.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/preprocess.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/old/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/select_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sentences.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_tacotron.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/train_wavernn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/display.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/distribution.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/dsp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/files.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/paths.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/text/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/text/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/text/cleaners.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/text/cmudict.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/text/numbers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/text/recipes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/text/symbols.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Expressive-Speech-Synthesis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Expressive-Speech-Synthesis.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data.py" beforeDir="false" afterPath="$PROJECT_DIR$/old/Data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hyperparameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/old/Hyperparameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blizzard_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/old/blizzard_preprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/old/utils.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="0e562a91-c539-4096-a569-96886203bd7f" />
+  <component name="ProjectId" id="1fXLJFmbLlx57we7YadeB98nmy9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/old" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.train">
+    <configuration name="Data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Expressive-Speech-Synthesis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/old/Data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="tachotron-pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../old/dip/tachotron-pytorch/GST-Tacotron-master" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../old/dip/tachotron-pytorch/GST-Tacotron-master/Data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="blizzard_preprocess" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="tachotron-pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../old/dip/tachotron-pytorch/GST-Tacotron-master" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../old/dip/tachotron-pytorch/GST-Tacotron-master/blizzard_preprocess.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="s" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Expressive-Speech-Synthesis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/s.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Expressive-Speech-Synthesis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/old/train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.train" />
+        <item itemvalue="Python.s" />
+        <item itemvalue="Python.Data" />
+        <item itemvalue="Python.blizzard_preprocess" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8c92dff1-8229-4df8-862a-68ab1492ce42" name="Default Changelist" comment="" />
+      <created>1596359416401</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596359416401</updated>
+      <workItem from="1598520603854" duration="90000" />
+    </task>
+    <task id="LOCAL-00001" summary="delete and start new">
+      <created>1596359548551</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596359548551</updated>
+    </task>
+    <task id="LOCAL-00002" summary="audio feature extraction">
+      <created>1596719600117</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596719600117</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added blizzard_preprocess.py&#10;update Data.py">
+      <created>1596724912717</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596724912717</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="delete and start new" />
+    <MESSAGE value="audio feature extraction" />
+    <MESSAGE value="added blizzard_preprocess.py&#10;update Data.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="added blizzard_preprocess.py&#10;update Data.py" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="0" y="125" width="800" height="684" key="#Deployment" timestamp="1598520647035">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="0" y="125" width="800" height="684" key="#Deployment/0.27.1600.873@0.27.1600.873" timestamp="1598520647035" />
+    <state x="0" y="199" width="1590" height="535" key="#xdebugger.XInspectDialog" timestamp="1596731419340">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="0" y="199" width="1590" height="535" key="#xdebugger.XInspectDialog/0.27.1600.873@0.27.1600.873" timestamp="1596731419340" />
+    <state x="794" y="1107" width="971" height="1053" key="#xdebugger.evaluate" timestamp="1596810456864">
+      <screen x="0" y="0" width="1920" height="2160" />
+    </state>
+    <state x="794" y="1107" width="971" height="1053" key="#xdebugger.evaluate/0.0.1920.2160@0.0.1920.2160" timestamp="1596810456864" />
+    <state x="662" y="273" width="809" height="627" key="#xdebugger.evaluate/0.27.1600.873@0.27.1600.873" timestamp="1596733580053" />
+    <state x="268" y="109" width="509" height="1053" key="FileChooserDialogImpl" timestamp="1598520271025">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="700" y="1107" width="509" height="1053" key="FileChooserDialogImpl/0.0.1920.2160@0.0.1920.2160" timestamp="1596807626347" />
+    <state x="268" y="109" width="424" height="491" key="FileChooserDialogImpl/0.27.1600.873@0.27.1600.873" timestamp="1598520271025" />
+    <state width="1897" height="317" key="GridCell.Tab.0.bottom" timestamp="1596813154995">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1897" height="317" key="GridCell.Tab.0.bottom/0.0.1920.2160@0.0.1920.2160" timestamp="1596811165994" />
+    <state width="1897" height="317" key="GridCell.Tab.0.bottom/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1596813154995" />
+    <state width="1577" height="268" key="GridCell.Tab.0.bottom/0.27.1600.873@0.27.1600.873" timestamp="1596733749343" />
+    <state width="1897" height="317" key="GridCell.Tab.0.center" timestamp="1596813154995">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1897" height="317" key="GridCell.Tab.0.center/0.0.1920.2160@0.0.1920.2160" timestamp="1596811165994" />
+    <state width="1897" height="317" key="GridCell.Tab.0.center/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1596813154995" />
+    <state width="1577" height="268" key="GridCell.Tab.0.center/0.27.1600.873@0.27.1600.873" timestamp="1596733749341" />
+    <state width="1897" height="317" key="GridCell.Tab.0.left" timestamp="1596813154995">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1897" height="317" key="GridCell.Tab.0.left/0.0.1920.2160@0.0.1920.2160" timestamp="1596811165994" />
+    <state width="1897" height="317" key="GridCell.Tab.0.left/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1596813154995" />
+    <state width="1577" height="268" key="GridCell.Tab.0.left/0.27.1600.873@0.27.1600.873" timestamp="1596733749339" />
+    <state width="1897" height="317" key="GridCell.Tab.0.right" timestamp="1596813154995">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1897" height="317" key="GridCell.Tab.0.right/0.0.1920.2160@0.0.1920.2160" timestamp="1596811165994" />
+    <state width="1897" height="317" key="GridCell.Tab.0.right/0.1080.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1596813154995" />
+    <state width="1577" height="268" key="GridCell.Tab.0.right/0.27.1600.873@0.27.1600.873" timestamp="1596733749342" />
+    <state width="1897" height="350" key="GridCell.Tab.1.bottom" timestamp="1596811165988">
+      <screen x="0" y="0" width="1920" height="2160" />
+    </state>
+    <state width="1897" height="350" key="GridCell.Tab.1.bottom/0.0.1920.2160@0.0.1920.2160" timestamp="1596811165988" />
+    <state width="1577" height="268" key="GridCell.Tab.1.bottom/0.27.1600.873@0.27.1600.873" timestamp="1596733749346" />
+    <state width="1897" height="350" key="GridCell.Tab.1.center" timestamp="1596811165988">
+      <screen x="0" y="0" width="1920" height="2160" />
+    </state>
+    <state width="1897" height="350" key="GridCell.Tab.1.center/0.0.1920.2160@0.0.1920.2160" timestamp="1596811165988" />
+    <state width="1577" height="268" key="GridCell.Tab.1.center/0.27.1600.873@0.27.1600.873" timestamp="1596733749345" />
+    <state width="1897" height="350" key="GridCell.Tab.1.left" timestamp="1596811165988">
+      <screen x="0" y="0" width="1920" height="2160" />
+    </state>
+    <state width="1897" height="350" key="GridCell.Tab.1.left/0.0.1920.2160@0.0.1920.2160" timestamp="1596811165988" />
+    <state width="1577" height="268" key="GridCell.Tab.1.left/0.27.1600.873@0.27.1600.873" timestamp="1596733749344" />
+    <state width="1897" height="350" key="GridCell.Tab.1.right" timestamp="1596811165988">
+      <screen x="0" y="0" width="1920" height="2160" />
+    </state>
+    <state width="1897" height="350" key="GridCell.Tab.1.right/0.0.1920.2160@0.0.1920.2160" timestamp="1596811165988" />
+    <state width="1577" height="268" key="GridCell.Tab.1.right/0.27.1600.873@0.27.1600.873" timestamp="1596733749345" />
+    <state x="383" y="209" width="824" height="515" key="IDE.errors.dialog" timestamp="1596713670884">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="383" y="209" width="824" height="515" key="IDE.errors.dialog/0.27.1600.873@0.27.1600.873" timestamp="1596713670884" />
+    <state x="289" y="98" width="1227" height="1053" key="SettingsEditor" timestamp="1598520692746">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="347" y="1107" width="1227" height="1053" key="SettingsEditor/0.0.1920.2160@0.0.1920.2160" timestamp="1596805940699" />
+    <state x="289" y="98" width="1022" height="737" key="SettingsEditor/0.27.1600.873@0.27.1600.873" timestamp="1598520692746" />
+    <state x="395" y="199" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1596724919511">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="395" y="199" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1600.873@0.27.1600.873" timestamp="1596724919511" />
+    <state width="960" height="1079" key="XDebugger.FullValuePopup" timestamp="1596810021130">
+      <screen x="0" y="0" width="1920" height="2160" />
+    </state>
+    <state width="960" height="1079" key="XDebugger.FullValuePopup/0.0.1920.2160@0.0.1920.2160" timestamp="1596810021130" />
+    <state width="800" height="436" key="XDebugger.FullValuePopup/0.27.1600.873@0.27.1600.873" timestamp="1596733028861" />
+    <state x="-597" y="71" width="777" height="829" key="dock-window-1" timestamp="1596719465742">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="-597" y="71" width="777" height="829" key="dock-window-1/0.27.1600.873@0.27.1600.873" timestamp="1596719465742" />
+    <state x="301" y="180" width="197" height="580" key="ftp.server.browser" timestamp="1598520643147">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="301" y="180" width="197" height="580" key="ftp.server.browser/0.27.1600.873@0.27.1600.873" timestamp="1598520643147" />
+    <state x="525" y="366" width="540" height="201" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1598520002610">
+      <screen x="0" y="27" width="1600" height="873" />
+    </state>
+    <state x="525" y="366" width="540" height="201" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.27.1600.873@0.27.1600.873" timestamp="1598520002610" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../old/dip/tachotron-pytorch/GST-Tacotron-master/Data.py</url>
+          <line>241</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../old/dip/tachotron-pytorch/GST-Tacotron-master/blizzard_preprocess.py</url>
+          <line>47</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../old/dip/tachotron-pytorch/GST-Tacotron-master/blizzard_preprocess.py</url>
+          <line>43</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../old/dip/tachotron-pytorch/GST-Tacotron-master/Data.py</url>
+          <line>209</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
